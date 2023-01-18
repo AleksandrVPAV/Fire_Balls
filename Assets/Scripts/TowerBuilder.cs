@@ -31,6 +31,5 @@ public class TowerBuilder : MonoBehaviour
 
     private Vector3 GetBuildPosition(Transform currentSegment)    
     {
-        return new Vector3(_buildPoint.position.x, currentSegment.position.y + currentSegment.localScale.y / 2, _buildPoint.position.z);  // прибавляем размер деленный на 2, чтобы блоки строились один над другим
-    }
+        return new Vector3(_buildPoint.position.x, currentSegment.position.y + currentSegment.localScale.y / 2, _buildPoint.position.z);  
 }
